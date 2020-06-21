@@ -16,11 +16,13 @@ fn main() {
     let opts = Opts::parse();
 
     let mut header = String::new();
+
     for beat in 1..=opts.beats {
         let beat_header = format!("{} + ", beat);
         header.push_str(&beat_header);
     }
-    println!("1 + 2 + 3 + 4 + ");
+
+    println!("{}", header);
 
     let mut strums = String::new();
 
